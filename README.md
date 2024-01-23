@@ -46,6 +46,28 @@ export AI2THOR_ROOT=/path/to/AI2THOR
 export CG_FOLDER=/path/to/concept-graphs/
 export AI2THOR_CONFIG_PATH=${CG_FOLDER}/conceptgraph/dataset/dataconfigs/replica/ai2thor.yaml
 ```
+Your `AI2THOR_ROOT` folder should have all your scenes folders and follow a directory structure like this :
+```
+
+
+└── AI2THOR_ROOT/
+    ├── fl202/
+    │   ├── results/
+    │   │   ├── depth000000.png
+    │   │   ├── depth000001.png
+    │   │   ├── depth000002.png
+    │   │   ├── .....
+    │   │   ├── frame000000.jpg
+    │   │   ├── frame000001.jpg
+    │   │   ├── frame000002.jpg
+    │   │   └── .....
+    │   └── traj.txt
+    ├── sh202/
+    ├── fl206/
+    └── sh206/
+  ```
+
+
 Run the following scripts 
 ```bash
 SCENE_NAME=FloorPlan206
@@ -113,3 +135,4 @@ Change the scene name you want to explore the moved objects in and run
 ```bash
 python Compare/detect_moved_objects.py
 ```
+[Here](https://drive.google.com/file/d/166oxpC5hup6t1On3L6vRo1nhXRgKi4yV/view?usp=sharing) you can download 7 scenes before and after shuffle to explore.
