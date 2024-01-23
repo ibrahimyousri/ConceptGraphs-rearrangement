@@ -46,10 +46,6 @@ def save_frames_and_trajectory(event):
     position = event.metadata['agent']['position']
     rotation = event.metadata['agent']['rotation']
     position['y'] += 0.675  # camera y pose
-    print(event.metadata["objects"][1]["name"])
-    print(position)
-    print(rotation)
-    print(file_counter)
 
     # Generate transformation matrix
     yaw = np.deg2rad(rotation['y'])
@@ -85,8 +81,6 @@ key_actions = {
     'd': 'MoveRight',
     'e': {'action': 'RotateRight', 'degrees': 3},
     'q': {'action': 'RotateLeft', 'degrees': 3},
-    'u': {'action': 'LookUp', 'degrees': 3},
-    'j': {'action': 'LookDown', 'degrees': 3},
     'r': 'PickupObject',  # Key 'r' to pick up an object
     'f': 'ThrowObject',  # Key 'f' to throw an object
     'b': 'ToggleMapView',  # Key 'b' to save frames and trajectory
