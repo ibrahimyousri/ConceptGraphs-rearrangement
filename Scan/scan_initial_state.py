@@ -5,7 +5,7 @@ import os
 import cv2
 import numpy as np
 
-# Initialize the AI2-THOR environment with necessary settings
+# Initialize the AI2-THOR environment with necessary settings, Enter your desired secene name here:
 controller = Controller(scene="FloorPlan207", gridSize=0.25, visibilityDistance=1.5,
                         fieldOfView=90, agentMode='default', renderDepthImage=True,
                         renderObjectImage=False, width=1000, height=1000)
@@ -44,10 +44,7 @@ def save_frames_and_trajectory(event):
     position = event.metadata['agent']['position']
     rotation = event.metadata['agent']['rotation']
     position['y'] += 0.675  # camera y pose
-    print(event.metadata["objects"][1] ["name"])
-    print(position)
-    print(rotation)
-    print(file_counter)
+
 
     # Generate transformation matrix
     yaw = np.deg2rad(rotation['y'])
@@ -76,8 +73,6 @@ key_actions = {
     'd': 'MoveRight',
     'e': {'action': 'RotateRight', 'degrees': 3},
     'q': {'action': 'RotateLeft', 'degrees': 3},
-    'u': {'action': 'LookUp', 'degrees': 3},
-    'j': {'action': 'LookDown', 'degrees': 3}
 }
 
 # Function to handle key press
