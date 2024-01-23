@@ -105,9 +105,9 @@ Compare/
     │   ├── sh202/
     │   ├── initial.pkl
     │   └── shuffled.pkl
-    ├── FloorPlan206
-    ├── FloorPlan207
-    └── FloorPlan301
+    ├── FloorPlan206/
+    ├── FloorPlan207/
+    └── FloorPlan301/
 ```
 Change the scene name you want to explore the moved objects in and run
 ```bash
