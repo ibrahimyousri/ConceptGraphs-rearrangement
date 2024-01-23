@@ -1,8 +1,8 @@
 # Object Rearrangement using ConceptGraphs in AI2-THOR environments 
 
+![Teaser](https://github.com/ibrahimyousri/object-rearrangement/blob/main/githubteaser.png?raw=true)
 We navigate through AI2-THOR scenes using keymapping collecting  RGP-D trajectories before and after shuffling objects, then we pass these data to ConceptGraphs to create object-based 3D point cloud mappings to detect moved objects in the scene.
 
-![Teaser](https://github.com/ibrahimyousri/object-rearrangement/blob/main/githubteaser.png?raw=true)
 ## Installation 
 
 Create a conda environment and install AI2-THOR
