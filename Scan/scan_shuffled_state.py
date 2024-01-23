@@ -83,7 +83,6 @@ key_actions = {
     'q': {'action': 'RotateLeft', 'degrees': 3},
     'r': 'PickupObject',  # Key 'r' to pick up an object
     'f': 'ThrowObject',  # Key 'f' to throw an object
-    'b': 'ToggleMapView',  # Key 'b' to save frames and trajectory
 }
 
 
