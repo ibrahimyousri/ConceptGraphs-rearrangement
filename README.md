@@ -46,7 +46,7 @@ Copy the captured scenes to your `$AI2THOR_ROOT` and set the following paths:
 ```bash
 export AI2THOR_ROOT=/path/to/AI2THOR
 export CG_FOLDER=/path/to/concept-graphs/
-export AI2THOR_CONFIG_PATH=${CG_FOLDER}/conceptgraph/dataset/dataconfigs/replica/ai2thor.yaml
+export AI2THOR_CONFIG_PATH=${CG_FOLDER}/conceptgraph/dataset/dataconfigs/ai2thor/ai2thor.yaml
 ```
 Your `AI2THOR_ROOT` folder should have all your scenes folders and follow a directory structure like this :
 ```
